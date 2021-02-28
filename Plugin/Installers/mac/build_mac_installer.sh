@@ -36,3 +36,5 @@ npx notarize-cli --file $pkg_dir/CHOWTapeModel-signed.pkg --bundle-id com.chowds
 echo "Building disk image..."
 vol_name=ChowTapeModel-Mac-$app_version
 hdiutil create "$vol_name.dmg" -fs HFS+ -srcfolder $pkg_dir -format UDZO -volname "$vol_name"
+
+
